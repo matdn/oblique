@@ -38,9 +38,9 @@ const visionaries = [
 export default function Home() {
   return (
     <main className="min-h-screen text-[#1D1AEF] font-sans">
-      <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-6 mx-auto p-4 md:p-8">
+      <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-2 mx-auto  md:p-2">
         {/* Partie gauche (scrollable) */}
-        <section className="flex flex-col overflow-y-auto pb-12 space-y-8 w-[70dvw] uppercase">
+        <section className="flex flex-col overflow-y-auto pb-4 space-y-2 w-[70dvw] uppercase">
           {/* Hero Section */}
           <div>
             <div className="bg-[#DAD6F0] rounded-lg p-6 h-[70dvh] flex flex-col justify-center items-center text-center">
@@ -52,7 +52,7 @@ export default function Home() {
                 L’ÉDITION 2025 D’OBLIQUE FESTIVAL<br />ARRIVE VITE
               </h2>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-12 h-[15dvh]">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 mt-2 h-[15dvh]">
               <div className="bg-[#1D1AEF] text-white rounded-lg p-4 text-ml">
                 <p className="uppercase mb-2 font-semibold tracking-wide opacity-50">Quand ?</p>
                 <p>12 SEPT 2025<br />11h00 - 21h30</p>
@@ -77,12 +77,12 @@ export default function Home() {
                   MEET THE VISIONARIES
                 </h2>
               </div>
-              <p className="max-w-md text-sm text-right text-[#2400FF] mt-4 md:mt-0">
+              <p className="max-w-md text-sm text-right text-[#2400FF] mt-2 md:mt-0">
                 Explore our lineup of keynote speakers and industry leaders who will inspire and enlighten at the conference.
               </p>
             </div>
 
-            {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
               {visionaries.map((person, i) => (
                 <div key={i} className="relative rounded-2xl overflow-hidden group">
                   <Image
@@ -100,10 +100,10 @@ export default function Home() {
                   </div>
                 </div>
               ))}
-            </div> */}
+            </div>
           </section>
           {/* Section PARTENAIRES ET ÉVÉNEMENTS */}
-          <section className=" min-h-[60dvh] space-y-6">
+          <section className=" space-y-2">
 
             {/* PARTNERS */}
             <div className="bg-[#E8E4FB] rounded-xl p-6">
@@ -161,8 +161,8 @@ export default function Home() {
         </section>
 
         {/* Partie droite (sticky) */}
-        <aside className="sticky top-8 self-start h-[100dvh]">
-          <div className="bg-[#1D1AEF] rounded-xl overflow-hidden relative group h-[60dvh]">
+        <aside className="sticky flex flex-col top-2 self-start h-[100dvh] pb-4 gap-2">
+          <div className="bg-[#1D1AEF] rounded-xl overflow-hidden relative group h-1/2">
             <img
               src="/images/about.png"
               alt="Découvrez Oblique"
@@ -175,21 +175,22 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="bg-[#1D1AEF] h-[35dvh] rounded-xl">
-            <img src="" alt="" />
-            <p className="uppercase text-sm mb-2">Découvrez<br />Oblique</p>
-            <button className="text-sm px-4 py-1 border border-white rounded-full hover:bg-white hover:text-[#1D1AEF] transition">
-              À propos
-            </button>
+          <div className="bg-[#1D1AEF] h-1/2 p-4 rounded-xl flex flex-col items-start justify-start gap-4">
+            <img src="/images/about.png" className="h-1/2 w-full" alt="" />
+            <div>
+              <p className="uppercase text-4xl mb-2 text-white">Ready to Be Part of It?</p>
+              <p className="text-sm mb-2 text-white">Don't miss out on the premier IT event of the year! Get your tickets now and be part of the future of technology!</p>
+
+            </div>
           </div>
         </aside>
       </div>
 
-      <div className="p-8 w-full">
+      <div className="p-2 w-full">
         <section className="w-[full] px-4 md:px-16 py-24 bg-[#E8E4FB] rounded-xl">
           <div className="flex flex-col md:flex-row justify-between items-center gap-12 max-w-7xl mx-auto">
             {/* Colonne gauche */}
-            <div className="text-[#1D1AEF] space-y-4 max-w-md">
+            <div className="text-[#1D1AEF] space-y-2 max-w-md">
               <p className="text-xs uppercase tracking-widest">[CONTACT US]</p>
               <h2 className="text-5xl font-bold">NOUS<br />CONTACTER</h2>
               <div className="flex flex-wrap gap-2 mt-6">
@@ -206,7 +207,7 @@ export default function Home() {
             </div>
 
             {/* Colonne droite - Formulaire */}
-            <form className="bg-[#2400FF] text-white p-8 rounded-xl w-full max-w-2xl space-y-4">
+            <form className="bg-[#2400FF] text-white p-8 rounded-xl w-full max-w-2xl space-y-2">
               <h3 className="text-2xl font-semibold uppercase">Vous avez une question ?<br />Restons en contact !</h3>
               <div className="space-y-2">
                 <label className="text-xs uppercase">Name</label>
