@@ -9,7 +9,11 @@ export async function generateStaticParams() {
     }));
 }
 
-export default function ArtistPage({ params }: { params: { slug: string; }; }) {
+export default function ArtistPage({
+    params,
+}: {
+    params: { slug: string; };
+}) {
     const artist = artists2024.find((a) => a.slug === params.slug);
 
     if (!artist) return notFound();
@@ -17,14 +21,10 @@ export default function ArtistPage({ params }: { params: { slug: string; }; }) {
     return (
         <main className="min-h-screen bg-[#F5F5FF] text-[#1D1AEF] pt-16 pb-2 px-4">
             <div className="max-w-5xl mx-auto space-y-8">
-                <a
-                    href="/previous-edition"
-                    className="inline-block mt-8 text-sm underline"
-                >
+                <a href="/previous-edition" className="inline-block mt-8 text-sm underline">
                     ← Retour à l’édition 2024
                 </a>
 
-                {/* Affichage conditionnel de l’image */}
                 {artist.image && (
                     <div className="overflow-hidden rounded-xl">
                         <Image
