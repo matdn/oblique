@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Footer from "../components/Footer";
+import Link from "next/link";
 
 export default function AboutPage() {
     return (
         <main className="min-h-screen bg-[#F5F5FF] text-[#1D1AEF] font-sans">
             <div className="px-4 py-16 max-w-7xl mx-auto space-y-16">
                 <h1 className="text-6xl font-bold uppercase text-center">
-                    L'Essence<br />du Festival
+                    L&apos;Essence<br />du Festival
                 </h1>
 
                 <div className="grid md:grid-cols-2 gap-4">
@@ -51,7 +52,7 @@ export default function AboutPage() {
                             <p className="text-xs uppercase tracking-widest">02 — SCÈNE ÉMERGENTE</p>
                             <h2 className="text-3xl font-bold mb-4">Un tremplin pour les nouvelles voix</h2>
                             <p className="text-ml leading-relaxed">
-                                En laissant la parole à de jeunes artistes, Oblique explore d'autres voies de narration.
+                                En laissant la parole à de jeunes artistes, Oblique explore d&apos;autres voies de narration.
                                 C’est un festival pensé comme un partenaire dans leur trajectoire artistique, un lieu d’expérimentation et de liberté.
                                 Oblique soutient des voix novatrices, en lien direct avec les enjeux de notre époque.
                             </p>
@@ -89,12 +90,12 @@ export default function AboutPage() {
                     <p className="text-ml max-w-xl mx-auto">
                         Explore notre univers en assistant à la prochaine édition ou en visionnant les éditions précédentes.
                     </p>
-                    <a
+                    <Link
                         href="/"
                         className="inline-block px-6 py-3 rounded-full bg-white text-[#1D1AEF] font-bold uppercase hover:bg-[#C5B9F6] transition"
                     >
-                        Retour à l'accueil
-                    </a>
+                        Retour à l&apos;accueil
+                    </Link>
                 </div>
             </div>
             <Footer />

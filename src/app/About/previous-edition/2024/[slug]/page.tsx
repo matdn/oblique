@@ -1,8 +1,7 @@
-import Footer from "@/app/components/Footer";
-import { artists2024 } from "@/app/data/2024Artists";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-
+import Footer from "@/app/components/Footer";
+import { artists2024 } from "@/app/data/2024Artists";
 
 interface ArtistPageProps {
     params: {
@@ -25,7 +24,7 @@ export default function ArtistPage({ params }: ArtistPageProps) {
         <main className="min-h-screen bg-[#F5F5FF] text-[#1D1AEF] pt-16 pb-2 px-4">
             <div className="max-w-5xl mx-auto space-y-8">
                 <a href="/previous-edition" className="inline-block mt-8 text-sm underline">
-                    ← Retour à l&apos;édition 2024
+                    ← Retour à l’édition 2024
                 </a>
 
                 {artist.image && (

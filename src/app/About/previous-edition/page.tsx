@@ -1,8 +1,9 @@
 "use client";
 
+import EditionGallery from "@/app/components/EditionGallery";
+import Footer from "@/app/components/Footer";
 import Link from "next/link";
-import EditionGallery from "../components/EditionGallery";
-import Footer from "../components/Footer";
+
 
 export default function PreviousEdition() {
     const program = [
