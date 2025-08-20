@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "npm run fix:tsconfig && next dev",
+    "fix:tsconfig": "sed -i '' '/.next\\/types\\/\\*\\*\\/*.ts/d' tsconfig.json",
+    "build": "npm run fix:tsconfig && next build",
     "start": "next start",
     "lint": "next lint"
   },

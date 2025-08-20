@@ -34,21 +34,42 @@ const visionaries = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen text-[#1D1AEF] font-sans">
+    <main className="min-h-screen text-white font-sans">
       <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-2 mx-auto md:p-2">
         {/* Partie gauche (scrollable) */}
         <section className="flex flex-col overflow-y-auto pb-4 space-y-2 w-[70dvw] uppercase">
           {/* Section Hero */}
           <div>
-            <div className="bg-[#DAD6F0] rounded-lg p-6 h-[70dvh] flex flex-col justify-center items-center text-center">
-              <p className="uppercase text-sm tracking-widest text-[#1D1AEF]">
+            {/* HERO avec OBLIQUE */}
+            <div className="bg-[#1D1AEF] rounded-lg p-6 h-[70dvh] flex flex-col justify-center items-center text-center">
+              <p className="uppercase text-sm tracking-widest text-white">
                 [arts visuels / danse / musique]
               </p>
-              <h1 className="text-8xl font-bold leading-tight">REFUGES</h1>
-              <h2 className="text-2xl font-semibold">
-                L’ÉDITION 2025 DU FESTIVAL OBLIQUE<br />ARRIVE BIENTÔT
-              </h2>
+              <h1 className="text-8xl font-bold leading-tight">OBLIQUE</h1>
+              {/* Description courte */}
+              <p className="max-w-xl text-lg text-white mt-4">
+                Festival pluridisciplinaire dédié aux arts visuels, à la danse et à la musique,
+                porté par une équipe engagée pour la création émergente et les enjeux climatiques.
+              </p>
+
             </div>
+
+            {/* SECTION REFUGES LIEN */}
+            <div className="mt-2 bg-[#DAD6F0] rounded-lg p-6 h-[40dvh] flex flex-col justify-center items-center text-center">
+              <Link href="/edition-2025">
+                <h2 className="text-6xl font-bold text-[#1D1AEF] hover:text-[#C5B9F6] transition">
+                  REFUGES
+                </h2>
+                <h2 className="text-2xl font-semibold text-[#1D1AEF] py-4">
+                  L’ÉDITION 2025 DU FESTIVAL OBLIQUE<br />ARRIVE BIENTÔT
+                </h2>
+              </Link>
+              <p className="text-sm text-[#1D1AEF] mt-2">
+                Découvrez l’univers de l’édition REFUGES
+              </p>
+            </div>
+
+            {/* Infos Quand / Où / Pour qui */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 mt-2 h-[15dvh]">
               <div className="bg-[#1D1AEF] text-white rounded-lg p-4 text-ml">
                 <p className="uppercase mb-2 font-semibold tracking-wide opacity-50">Quand ?</p>
@@ -64,6 +85,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+
 
           {/* Section Équipe */}
           <section className="space-y-2">

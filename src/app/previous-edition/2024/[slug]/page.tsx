@@ -1,7 +1,13 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { artists2024 } from "../../../../../public/data/2024Artists";
 import Footer from "@/app/components/Footer";
+import { artists2024 } from "@/app/data/2024Artists";
+
+interface ArtistPageProps {
+    params: {
+        slug: string;
+    };
+}
 
 export async function generateStaticParams() {
     return artists2024.map((artist) => ({
@@ -9,11 +15,7 @@ export async function generateStaticParams() {
     }));
 }
 
-export default function ArtistPage({
-    params,
-}: {
-    params: { slug: string; };
-}) {
+export default function ArtistPage({ params }: ArtistPageProps) {
     const artist = artists2024.find((a) => a.slug === params.slug);
 
     if (!artist) return notFound();

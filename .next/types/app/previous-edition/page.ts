@@ -1,4 +1,4 @@
-// File: /Users/matisdene/Documents/DEV/oblique/src/app/previous-edition/page.tsx
+// File: /Users/matisdene/Documents/DEV/oblique copie/src/app/previous-edition/page.tsx
 import * as entry from '../../../../src/app/previous-edition/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
