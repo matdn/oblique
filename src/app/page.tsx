@@ -7,28 +7,58 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="min-h-screen text-white font-sans">
-      <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-2 mx-auto md:p-2">
+
+      <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-2 mx-auto md:p-2 ">
+        {/* <header className="absolute top-8 left-[15dvw] selft-center z-100  w-[40dvw] hidden md:block">
+          <nav>
+            <ul className="flex top-10 gap-4 left">
+              <li className="bg-[#1D1AEF] p-4 text-center w-auto rounded-full">
+                <Link href="/edition-2025" className="text-white text-sm font-semibold hover:text-[#C5B9F6] transition uppercase">
+                  Prochain Événement
+                </Link>
+              </li>
+              <li className="bg-[#1D1AEF] p-4 text-center w-auto rounded-full">
+                <Link href="/previous-edition" className="text-white text-sm font-semibold hover:text-[#C5B9F6] transition uppercase">
+                  Éditions Précédentes
+                </Link>
+              </li>
+              <li className="bg-[#1D1AEF] p-4 text-center w-auto rounded-full">
+                <Link href="/About" className="text-white text-sm font-semibold hover:text-[#C5B9F6] transition uppercase">
+                  À propos
+                </Link>
+              </li>
+              <li className="bg-[#1D1AEF] p-4 text-center w-auto rounded-full">
+                <Link href="#contact" className="text-white text-sm font-semibold hover:text-[#C5B9F6] transition uppercase">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        </header> */}
         {/* Partie gauche (scrollable) */}
-        <section className="flex flex-col overflow-y-auto pb-4 space-y-2 md:w-full w-screen px-4">
+        <section className="flex flex-col overflow-y-auto pb-4 space-y-2 md:w-full w-screen px-2">
           {/* Section Hero */}
           <div>
             {/* HERO avec OBLIQUE */}
             <div className="bg-[#1D1AEF] rounded-lg p-6 h-[70dvh] flex flex-col justify-center items-center text-center">
               <p className="uppercase text-sm tracking-widest text-white">
-                [arts visuels / danse / musique]
+                [arts visuels / arts vivants]
               </p>
               <h1 className="text-8xl font-bold leading-tight">OBLIQUE</h1>
               {/* Description courte */}
               <p className="max-w-xl text-lg text-white mt-4">
-                Festival pluridisciplinaire dédié aux arts visuels, à la danse et à la musique,
-                porté par une équipe engagée pour la création émergente et les enjeux climatiques.
+                Festival pluridisciplinaire engagée pour la création émergente sur les sujets d'enjeux climatiques.
               </p>
 
             </div>
 
+
             {/* SECTION REFUGES LIEN */}
             <div className="mt-2 bg-[#DAD6F0] rounded-lg p-6 h-[40dvh] flex flex-col justify-center items-center text-center">
               <Link href="/edition-2025">
+                <p className="uppercase text-sm tracking-widest text-[#1D1AEF] py-4">
+                  [prochain évennement]
+                </p>
                 <h2 className="text-6xl font-bold text-[#1D1AEF] hover:text-[#C5B9F6] transition">
                   REFUGES
                 </h2>
@@ -58,9 +88,43 @@ export default function Home() {
             </div>
           </div>
 
+          <div className="rounded-xl overflow-hidden max-h-[500px] sm:max-h-[800px]">
+            <Image
+              src="/images/preFooter.png"
+              alt="Performance Oblique"
+              width={1200}
+              height={800}
+              className="w-full object-cover h-full brightness-75"
+            />
+          </div>
+
+
+          <div className="bg-[#DAD6F0] text-[#1D1AEF] rounded-xl p-6 space-y-4">
+            <div className="flex flex-col justify-center items-center text-center gap-4">
+              <p className="text-xs uppercase tracking-widest text-[#1D1AEF]">[ARCHIVES / Oblique 2024]</p>
+              <h3 className="text-4xl font-bold uppercase leading-tight">ÉDITIONS PRÉCÉDENTES<br />ET ARTISTES</h3>
+            </div>
+
+            <div className="grid grid-cols-1 gap-4">
+              <div className="bg-[#DAD6F0] text-[#1D1AEF] h-auto rounded-xl p-6 flex flex-col items-center justify-center text-center space-y-2">
+                {/* <h4 className="text-lg font-bold">Oblique 2024</h4> */}
+                <p className="text-sm">
+                  Une édition autour de la question : <strong>« Qu’est-ce que l’on garde ? »</strong><br />
+                  Performances, danse, poésie, art visuel et engagement climatique au cœur de l’Académie du Climat.
+                </p>
+                <Link href="/previous-edition">
+                  <button className="px-6 py-3 my-8 bg-[#1D1AEF] text-[#DAD6F0] font-semibold rounded-full uppercase hover:bg-[#C5B9F6] hover:text-white transition"
+                  >
+                    Voir plus
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+
 
           {/* Section Équipe */}
-          <section className="space-y-2">
+          {/* <section className="space-y-2">
             <div className="flex flex-col md:flex-row md:justify-between md:items-center rounded-lg bg-[#DAD6F0] p-4 min-h-48">
               <div>
                 <p className="uppercase text-xs tracking-wide text-[#2400FF]">[équipe]</p>
@@ -72,22 +136,40 @@ export default function Home() {
                 Découvrez les personnes passionnées derrière le festival. Une équipe pluridisciplinaire engagée pour la création émergente et les enjeux climatiques.
               </p>
             </div>
-          </section>
+          </section> */}
 
           {/* Partenaires et événements */}
           <section className="space-y-2">
-            <div className="rounded-xl overflow-hidden max-h-[500px] sm:max-h-[800px]">
-              <Image
-                src="/images/preFooter.png"
-                alt="Performance Oblique"
-                width={1200}
-                height={800}
-                className="w-full object-cover h-full brightness-75"
-              />
-            </div>
+
+
+            <section className="w-full px-4 md:px-16 py-24 bg-[#1D1AEF] rounded-xl ">
+              <div className="flex flex-col md:flex-row justify-between items-center gap-12 max-w-7xl mx-auto text-white">
+                {/* Texte */}
+                <div className="space-y-4 max-w-md">
+                  <p className="text-xs uppercase tracking-widest text-[#C5B9F6]">[SOUTENIR]</p>
+                  <h2 className="text-4xl sm:text-5xl font-bold leading-tight">FAIRE UN DON</h2>
+                  <p className="text-sm">
+                    Soutenez le Festival Oblique et aidez-nous à construire un événement engagé, inclusif et dédié à la création émergente.
+                  </p>
+                </div>
+
+                {/* Bouton */}
+                <div>
+                  <a
+                    href="https://www.helloasso.com/associations/oblique-festival/evenements/refuges"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-6 py-3 bg-white text-[#1D1AEF] font-semibold rounded-full uppercase hover:bg-[#C5B9F6] hover:text-white transition"
+                  >
+                    Faire un don
+                  </a>
+                </div>
+              </div>
+            </section>
+
 
             {/* Partenaires */}
-            <div className="bg-[#E8E4FB] rounded-xl p-6">
+            {/* <div className="bg-[#E8E4FB] rounded-xl p-6">
               <div className="flex flex-col sm:flex-row justify-between items-start gap-4">
                 <div>
                   <p className="text-xs uppercase tracking-widest text-[#1D1AEF]">[PARTENAIRES]</p>
@@ -103,30 +185,10 @@ export default function Home() {
                 <div className="bg-[#1D1AEF] text-white rounded-xl h-24 flex items-center justify-center">LOGO</div>
                 <div className="bg-[#1D1AEF] text-white rounded-xl h-24 flex items-center justify-center">LOGO</div>
               </div>
-            </div>
+            </div> */}
 
             {/* Ressources */}
-            <div className="bg-[#1D1AEF] text-white rounded-xl p-6 space-y-4">
-              <div className="flex flex-col justify-center items-center text-center gap-4">
-                <p className="text-xs uppercase tracking-widest text-[#C5B9F6]">[ARCHIVES]</p>
-                <h3 className="text-xl font-bold uppercase leading-tight">ÉDITIONS PRÉCÉDENTES<br />ET ARTISTES</h3>
-              </div>
 
-              <div className="grid grid-cols-1 gap-4">
-                <div className="bg-[#DAD6F0] text-[#1D1AEF] h-auto rounded-xl p-6 flex flex-col items-center justify-center text-center space-y-2">
-                  <h4 className="text-lg font-bold">Oblique 2024</h4>
-                  <p className="text-sm">
-                    Une édition autour de la question : <strong>« Qu’est-ce que l’on garde ? »</strong><br />
-                    Performances, danse, poésie, art visuel et engagement climatique au cœur de l’Académie du Climat.
-                  </p>
-                  <Link href="/previous-edition">
-                    <button className="mt-2 text-xs border border-[#1D1AEF] px-3 py-1 rounded-full hover:bg-[#1D1AEF] hover:text-white transition">
-                      Voir plus
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </div>
           </section>
         </section>
 
@@ -143,7 +205,7 @@ export default function Home() {
             <div className="absolute bottom-4 left-4 text-white z-10">
               <p className="uppercase text-sm mb-2">En savoir plus<br />sur Oblique</p>
               <Link href="/About">
-                <button className="text-sm px-4 py-1 border border-white rounded-full hover:bg-white hover:text-[#1D1AEF] transition">
+                <button className="text-sm px-4 py-2 border border-white rounded-full hover:bg-white hover:text-[#1D1AEF] transition">
                   À propos
                 </button>
               </Link>
@@ -154,11 +216,11 @@ export default function Home() {
             <Image src="/images/benevoles.png" width={600} height={300} className="h-3/5 w-full object-cover grayscale" alt="Bénévoles" />
             <div>
               <p className="uppercase text-2xl lg:text-3xl mb-2 text-white">Envie de nous rejoindre ?</p>
-              <p className="text-sm mb-2 text-white">
+              <p className="text-sm mb-2 text-white mb-8">
                 Participez à l&apos;aventure Oblique ! Rejoignez l’équipe de bénévoles et contribuez à un événement culturel engagé et collectif.
               </p>
               <Link href="https://docs.google.com/forms/d/e/1FAIpQLScRXG6gcvCU3WEO--ny6uaj5ow39xedH0c45mP3767Gq1WDjg/viewform">
-                <button className="text-sm px-4 py-1 border border-white text-white rounded-full hover:bg-white hover:text-[#1D1AEF] transition">
+                <button className="text-sm px-4 py-2 border border-white text-white rounded-full hover:bg-white hover:text-[#1D1AEF] transition">
                   Devenir bénévole
                 </button>
               </Link>
@@ -169,7 +231,7 @@ export default function Home() {
 
       {/* Footer avec contact */}
       <div className="p-2 w-full">
-        <section className="w-full px-4 md:px-16 py-24 bg-[#E8E4FB] rounded-xl">
+        <section className="w-full px-2 md:px-16 py-24 bg-[#E8E4FB] rounded-xl">
           <div className="flex flex-col md:flex-row justify-between items-center gap-12 max-w-7xl mx-auto">
             {/* Colonne gauche */}
             <div className="text-[#1D1AEF] space-y-2 max-w-md">
@@ -189,7 +251,7 @@ export default function Home() {
             </div>
 
             {/* Colonne droite : formulaire */}
-            <form className="bg-[#2400FF] text-white p-8 rounded-xl w-full max-w-2xl space-y-4">
+            <form id="contact" className="bg-[#2400FF] text-white p-8 py-2 rounded-xl w-full max-w-2xl space-y-4">
               <h3 className="text-2xl font-semibold uppercase">Une question ?<br />Contactez-nous</h3>
               <div className="space-y-2">
                 <label className="text-xs uppercase">Nom</label>
