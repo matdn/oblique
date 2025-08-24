@@ -77,11 +77,11 @@ export default function Home() {
                 <p className="uppercase mb-2 font-semibold tracking-wide opacity-50">Quand ?</p>
                 <p>12 SEPT 2025<br />11h00 - 21h30</p>
               </div>
-              <div className="bg-[#1D1AEF] text-white rounded-lg p-4 text-sm">
+              <div className="bg-[#1D1AEF] text-white rounded-lg p-4 text-ml">
                 <p className="uppercase mb-2 font-semibold tracking-wide opacity-50">Où ?</p>
                 <p>Paris, France<br />Académie du Climat</p>
               </div>
-              <div className="bg-[#1D1AEF] text-white rounded-lg p-4 text-sm">
+              <div className="bg-[#1D1AEF] text-white rounded-lg p-4 text-ml">
                 <p className="uppercase mb-2 font-semibold tracking-wide opacity-50">Pour qui ?</p>
                 <p>Tout public</p>
               </div>

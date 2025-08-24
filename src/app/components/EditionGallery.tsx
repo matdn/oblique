@@ -31,6 +31,8 @@ export default function EditionGallery() {
                         <Image
                             src={src}
                             alt={`Image ${index + 1}`}
+                            width={500}
+                            height={500}
                             className="w-full object-cover rounded-xl hover:scale-105 transition-transform duration-300 grayscale hover:grayscale-0"
                         />
                     </div>
