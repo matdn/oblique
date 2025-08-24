@@ -75,15 +75,15 @@ export default function Home() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 mt-2 h-auto sm:h-[15dvh]">
               <div className="bg-[#1D1AEF] text-white rounded-lg p-4 text-ml">
                 <p className="uppercase mb-2 font-semibold tracking-wide opacity-50">Quand ?</p>
-                <p>12 SEPT 2025<br />11h00 - 21h30</p>
+                <p className="text-ml uppercase">12 SEPT 2025<br />11h00 - 21h30</p>
               </div>
               <div className="bg-[#1D1AEF] text-white rounded-lg p-4 text-ml">
                 <p className="uppercase mb-2 font-semibold tracking-wide opacity-50">Où ?</p>
-                <p>Paris, France<br />Académie du Climat</p>
+                <p className="text-ml uppercase">Paris, France<br />Académie du Climat</p>
               </div>
               <div className="bg-[#1D1AEF] text-white rounded-lg p-4 text-ml">
                 <p className="uppercase mb-2 font-semibold tracking-wide opacity-50">Pour qui ?</p>
-                <p>Tout public</p>
+                <p className="text-ml uppercase">Tout public</p>
               </div>
             </div>
 
