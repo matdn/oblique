@@ -44,7 +44,7 @@ export default function Home() {
               <p className="uppercase text-sm tracking-widest text-white">
                 [arts visuels / arts vivants]
               </p>
-              <h1 className="text-8xl font-bold leading-tight">OBLIQUE</h1>
+              <h1 className="md:text-8xl font-bold leading-tight text-4xl">OBLIQUE</h1>
               {/* Description courte */}
               <p className="max-w-xl text-lg text-white mt-4">
                 Festival pluridisciplinaire engagée pour la création émergente sur les sujets d'enjeux climatiques.
@@ -72,7 +72,7 @@ export default function Home() {
             </div>
 
             {/* Infos Quand / Où / Pour qui */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 mt-2 h-[15dvh]">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 mt-2 h-auto sm:h-[15dvh]">
               <div className="bg-[#1D1AEF] text-white rounded-lg p-4 text-ml">
                 <p className="uppercase mb-2 font-semibold tracking-wide opacity-50">Quand ?</p>
                 <p>12 SEPT 2025<br />11h00 - 21h30</p>
@@ -86,15 +86,16 @@ export default function Home() {
                 <p>Tout public</p>
               </div>
             </div>
+
           </div>
 
-          <div className="rounded-xl overflow-hidden max-h-[500px] sm:max-h-[800px]">
+          <div className="rounded-xl overflow-hidden max-h-[500px] sm:max-h-[800px] mt-4">
             <Image
               src="/images/preFooter.png"
               alt="Performance Oblique"
               width={1200}
               height={800}
-              className="w-full object-cover h-full brightness-75"
+              className="w-full h-auto object-cover brightness-75"
             />
           </div>
 
