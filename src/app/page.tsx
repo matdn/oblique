@@ -101,58 +101,32 @@ export default function Home() {
 
          <div className="bg-[#DAD6F0] text-[#1D1AEF] rounded-xl p-6 space-y-8">
   {/* Header */}
-  <div className="flex flex-col justify-center items-center text-center gap-4">
-    <p className="text-xs uppercase tracking-widest text-[#1D1AEF]">
-      [ARCHIVES / Oblique]
-    </p>
-    <h3 className="text-4xl font-bold uppercase leading-tight">
-      ÉDITIONS PRÉCÉDENTES<br />ET ARTISTES
-    </h3>
-  </div>
 
-  <div className="bg-[#DAD6F0] text-[#1D1AEF] rounded-xl p-10 space-y-10">
-  {/* Header */}
-  <div className="flex flex-col justify-center items-center text-center gap-4">
-    <p className="text-xs uppercase tracking-widest text-[#1D1AEF]/80">
-      [ARCHIVES / Oblique]
-    </p>
-    <h3 className="text-4xl font-bold uppercase leading-tight">
-      ÉDITIONS PRÉCÉDENTES<br />ET ARTISTES
-    </h3>
-  </div>
 
-  {/* Editions grid */}
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-    {/* Edition 2024 */}
-    <div className="bg-[#1D1AEF] text-white rounded-xl shadow-lg border border-[#C5B9F6]/40 p-8 flex flex-col items-center justify-between text-center space-y-6 transition transform hover:scale-[1.02] hover:shadow-xl">
-      <h4 className="text-xl font-bold uppercase">Oblique 2024</h4>
-      <p className="text-sm leading-relaxed">
-        Une édition autour de la question : <strong>« Qu’est-ce que l’on garde ? »</strong><br />
-        Performances, danse, poésie, art visuel et engagement climatique au cœur de l’Académie du Climat.
-      </p>
-      <Link href="/previous-edition/2024">
-        <button className="px-6 py-3 bg-[#1D1AEF] text-white font-semibold rounded-full uppercase hover:bg-[#0E0CCF] transition">
-          Voir plus
-        </button>
-      </Link>
-    </div>
+       <div className="bg-[#DAD6F0] text-[#1D1AEF] rounded-xl p-6 space-y-4">
+            <div className="flex flex-col justify-center items-center text-center gap-4">
+              <p className="text-xs uppercase tracking-widest text-[#1D1AEF]">[ARCHIVES / Oblique 2024]</p>
+              <h3 className="text-4xl font-bold uppercase leading-tight">ÉDITIONS PRÉCÉDENTES<br />ET ARTISTES</h3>
+            </div>
 
-    {/* Edition 2023 */}
-    <div className="bg-[#1D1AEF] text-white rounded-xl shadow-lg border border-[#C5B9F6]/40 p-8 flex flex-col items-center justify-between text-center space-y-6 transition transform hover:scale-[1.02] hover:shadow-xl">
-      <h4 className="text-xl font-bold uppercase">Oblique 2023</h4>
-      <p className="text-sm leading-relaxed">
-        Une édition placée sous le signe de <strong>« Vers la Forêt / Depuis la Forêt »</strong><br />
-        Expositions, photos, peintures, collages et une performance musicale au vernissage.
-      </p>
-      <Link href="/previous-edition/2023">
-        <button className="px-4 py-2 bg-[#1D1AEF] border text-white text-sm font-semibold rounded-full uppercase hover:bg-[#0E0CCF] transition">
-          Voir plus
-        </button>
-      </Link>
-    </div>
-  </div>
-</div>
-</div>
+            <div className="grid grid-cols-1 gap-4">
+              <div className="bg-[#DAD6F0] text-[#1D1AEF] h-auto rounded-xl p-6 flex flex-col items-center justify-center text-center space-y-2">
+                {/* <h4 className="text-lg font-bold">Oblique 2024</h4> */}
+                <p className="text-sm">
+                  Une édition autour de la question : <strong>« Qu’est-ce que l’on garde ? »</strong><br />
+                  Performances, danse, poésie, art visuel et engagement climatique au cœur de l’Académie du Climat.
+                </p>
+                <Link href="/previous-edition">
+                  <button className="px-6 py-3 my-8 bg-[#1D1AEF] text-[#DAD6F0] font-semibold rounded-full uppercase hover:bg-[#C5B9F6] hover:text-white transition"
+                  >
+                    Voir plus
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+
+        </div>
 
 
           {/* Section Équipe */}
@@ -198,7 +172,34 @@ export default function Home() {
                 </div>
               </div>
             </section>
+{/* --- On parle de nous --- */}
+<section className="w-full px-4 md:px-16 py-24 bg-[#DAD6F0] rounded-xl mt-4">
+  <div className="flex flex-col md:flex-row justify-between items-center gap-12 max-w-7xl mx-auto text-[#1D1AEF]">
+    {/* Texte */}
+    <div className="space-y-4 max-w-md text-center md:text-left">
+      <p className="text-xs uppercase tracking-widest">[On parle de nous]</p>
+      <h2 className="text-3xl sm:text-4xl font-bold leading-tight">
+        Scène ouverte Art & Science II
+      </h2>
+      <p className="text-sm">
+        Découvrez l’article du Théâtre de la Ville de Paris sur notre participation
+        à <strong>Scène ouverte Art & Science II</strong>.
+      </p>
+    </div>
 
+    {/* Bouton */}
+    <div>
+      <a
+        href="https://www.theatredelaville-paris.com/fr/spectacles/projets-passerelles/art-science/scene-ouverte-art-science-ii?fbclid=PAQ0xDSwMYaOJleHRuA2FlbQIxMQABpu_zA5rEdVylNac8KieRLmCn7Ibv-58mz9kY6JvgWbTc-zYnH-oWQwXNtg_aem_Dzmx5HAtXTurZ_eEPfM8tg"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block px-6 py-3 bg-[#1D1AEF] text-white font-semibold rounded-full uppercase hover:bg-[#2400FF] transition"
+      >
+        Lire l’article
+      </a>
+    </div>
+  </div>
+</section>
 
             {/* Partenaires */}
             {/* <div className="bg-[#E8E4FB] rounded-xl p-6">
@@ -245,10 +246,10 @@ export default function Home() {
           </div>
 
           <div className="bg-[#1D1AEF] h-1/2 p-4 rounded-xl flex flex-col items-start justify-start gap-4">
-            <Image src="/images/benevoles.png" width={600} height={300} className="h-3/5 w-full object-cover grayscale" alt="Bénévoles" />
+            <Image src="/images/benevoles.png" width={600} height={300} className="h-2/5 w-full object-cover grayscale" alt="Bénévoles" />
             <div>
               <p className="uppercase text-2xl lg:text-3xl mb-2 text-white">Envie de nous rejoindre ?</p>
-              <p className="text-sm mb-2 text-white mb-8">
+              <p className="text-sm mb-8 text-white">
                 Participez à l&apos;aventure Oblique ! Rejoignez l’équipe de bénévoles et contribuez à un événement culturel engagé et collectif.
               </p>
               <Link href="https://docs.google.com/forms/d/e/1FAIpQLScRXG6gcvCU3WEO--ny6uaj5ow39xedH0c45mP3767Gq1WDjg/viewform">
