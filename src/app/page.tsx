@@ -175,6 +175,17 @@ export default function Home() {
 {/* --- On parle de nous --- */}
 <section className="w-full px-4 md:px-16 py-24 bg-[#DAD6F0] rounded-xl mt-4">
   <div className="flex flex-col md:flex-row justify-between items-center gap-12 max-w-7xl mx-auto text-[#1D1AEF]">
+     {/* Bouton */}
+    <div>
+      <a
+        href="https://www.theatredelaville-paris.com/fr/spectacles/projets-passerelles/art-science/scene-ouverte-art-science-ii?fbclid=PAQ0xDSwMYaOJleHRuA2FlbQIxMQABpu_zA5rEdVylNac8KieRLmCn7Ibv-58mz9kY6JvgWbTc-zYnH-oWQwXNtg_aem_Dzmx5HAtXTurZ_eEPfM8tg"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block px-6 py-3 bg-[#1D1AEF] text-white font-semibold rounded-full uppercase hover:bg-[#2400FF] transition"
+      >
+        Lire l’article
+      </a>
+    </div>
     {/* Texte */}
     <div className="space-y-4 max-w-md text-center md:text-left">
       <p className="text-xs uppercase tracking-widest">[On parle de nous]</p>
@@ -187,17 +198,7 @@ export default function Home() {
       </p>
     </div>
 
-    {/* Bouton */}
-    <div>
-      <a
-        href="https://www.theatredelaville-paris.com/fr/spectacles/projets-passerelles/art-science/scene-ouverte-art-science-ii?fbclid=PAQ0xDSwMYaOJleHRuA2FlbQIxMQABpu_zA5rEdVylNac8KieRLmCn7Ibv-58mz9kY6JvgWbTc-zYnH-oWQwXNtg_aem_Dzmx5HAtXTurZ_eEPfM8tg"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-block px-6 py-3 bg-[#1D1AEF] text-white font-semibold rounded-full uppercase hover:bg-[#2400FF] transition"
-      >
-        Lire l’article
-      </a>
-    </div>
+   
   </div>
 </section>
 
