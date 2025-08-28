@@ -44,7 +44,7 @@ export default function Home() {
               <p className="uppercase text-sm tracking-widest text-white">
                 [arts visuels / arts vivants]
               </p>
-              <h1 className="md:text-8xl font-bold leading-tight text-4xl">OBLIQUE</h1>
+              <h1 className="md:text-8xl font-bold leading-tight text-6xl">OBLIQUE</h1>
               {/* Description courte */}
               <p className="max-w-xl text-lg text-white mt-4">
                 Festival pluridisciplinaire engagée pour la création émergente sur les sujets d'enjeux climatiques.
@@ -52,14 +52,13 @@ export default function Home() {
 
             </div>
 
-
             {/* SECTION REFUGES LIEN */}
             <div className="mt-2 bg-[#DAD6F0] rounded-lg p-6 h-[40dvh] flex flex-col justify-center items-center text-center">
               <Link href="/edition-2025">
                 <p className="uppercase text-sm tracking-widest text-[#1D1AEF] py-4">
                   [prochain évennement]
                 </p>
-                <h2 className="text-6xl font-bold text-[#1D1AEF] hover:text-[#C5B9F6] transition">
+                <h2 className="text-4xl font-bold text-[#1D1AEF] hover:text-[#C5B9F6] transition">
                   REFUGES
                 </h2>
                 <h2 className="text-2xl font-semibold text-[#1D1AEF] py-4">
@@ -75,11 +74,11 @@ export default function Home() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 mt-2 h-auto sm:h-[15dvh]">
               <div className="bg-[#1D1AEF] text-white rounded-lg p-4 text-ml">
                 <p className="uppercase mb-2 font-semibold tracking-wide opacity-50">Quand ?</p>
-                <p className="text-ml uppercase">12 SEPT 2025<br />11h00 - 21h30</p>
+                <p className="text-ml uppercase">6-7 SEPT 2025<br />15h00 - 23h00</p>
               </div>
               <div className="bg-[#1D1AEF] text-white rounded-lg p-4 text-ml">
                 <p className="uppercase mb-2 font-semibold tracking-wide opacity-50">Où ?</p>
-                <p className="text-ml uppercase">Paris, France<br />Académie du Climat</p>
+                <p className="text-ml uppercase">Paris, France<br />Académie du Climat <br />2 place Baudoyer, 75004</p>
               </div>
               <div className="bg-[#1D1AEF] text-white rounded-lg p-4 text-ml">
                 <p className="uppercase mb-2 font-semibold tracking-wide opacity-50">Pour qui ?</p>
@@ -100,28 +99,60 @@ export default function Home() {
           </div>
 
 
-          <div className="bg-[#DAD6F0] text-[#1D1AEF] rounded-xl p-6 space-y-4">
-            <div className="flex flex-col justify-center items-center text-center gap-4">
-              <p className="text-xs uppercase tracking-widest text-[#1D1AEF]">[ARCHIVES / Oblique 2024]</p>
-              <h3 className="text-4xl font-bold uppercase leading-tight">ÉDITIONS PRÉCÉDENTES<br />ET ARTISTES</h3>
-            </div>
+         <div className="bg-[#DAD6F0] text-[#1D1AEF] rounded-xl p-6 space-y-8">
+  {/* Header */}
+  <div className="flex flex-col justify-center items-center text-center gap-4">
+    <p className="text-xs uppercase tracking-widest text-[#1D1AEF]">
+      [ARCHIVES / Oblique]
+    </p>
+    <h3 className="text-4xl font-bold uppercase leading-tight">
+      ÉDITIONS PRÉCÉDENTES<br />ET ARTISTES
+    </h3>
+  </div>
 
-            <div className="grid grid-cols-1 gap-4">
-              <div className="bg-[#DAD6F0] text-[#1D1AEF] h-auto rounded-xl p-6 flex flex-col items-center justify-center text-center space-y-2">
-                {/* <h4 className="text-lg font-bold">Oblique 2024</h4> */}
-                <p className="text-sm">
-                  Une édition autour de la question : <strong>« Qu’est-ce que l’on garde ? »</strong><br />
-                  Performances, danse, poésie, art visuel et engagement climatique au cœur de l’Académie du Climat.
-                </p>
-                <Link href="/previous-edition">
-                  <button className="px-6 py-3 my-8 bg-[#1D1AEF] text-[#DAD6F0] font-semibold rounded-full uppercase hover:bg-[#C5B9F6] hover:text-white transition"
-                  >
-                    Voir plus
-                  </button>
-                </Link>
-              </div>
-            </div>
-          </div>
+  <div className="bg-[#DAD6F0] text-[#1D1AEF] rounded-xl p-10 space-y-10">
+  {/* Header */}
+  <div className="flex flex-col justify-center items-center text-center gap-4">
+    <p className="text-xs uppercase tracking-widest text-[#1D1AEF]/80">
+      [ARCHIVES / Oblique]
+    </p>
+    <h3 className="text-4xl font-bold uppercase leading-tight">
+      ÉDITIONS PRÉCÉDENTES<br />ET ARTISTES
+    </h3>
+  </div>
+
+  {/* Editions grid */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    {/* Edition 2024 */}
+    <div className="bg-[#1D1AEF] text-white rounded-xl shadow-lg border border-[#C5B9F6]/40 p-8 flex flex-col items-center justify-between text-center space-y-6 transition transform hover:scale-[1.02] hover:shadow-xl">
+      <h4 className="text-xl font-bold uppercase">Oblique 2024</h4>
+      <p className="text-sm leading-relaxed">
+        Une édition autour de la question : <strong>« Qu’est-ce que l’on garde ? »</strong><br />
+        Performances, danse, poésie, art visuel et engagement climatique au cœur de l’Académie du Climat.
+      </p>
+      <Link href="/previous-edition/2024">
+        <button className="px-6 py-3 bg-[#1D1AEF] text-white font-semibold rounded-full uppercase hover:bg-[#0E0CCF] transition">
+          Voir plus
+        </button>
+      </Link>
+    </div>
+
+    {/* Edition 2023 */}
+    <div className="bg-[#1D1AEF] text-white rounded-xl shadow-lg border border-[#C5B9F6]/40 p-8 flex flex-col items-center justify-between text-center space-y-6 transition transform hover:scale-[1.02] hover:shadow-xl">
+      <h4 className="text-xl font-bold uppercase">Oblique 2023</h4>
+      <p className="text-sm leading-relaxed">
+        Une édition placée sous le signe de <strong>« Vers la Forêt / Depuis la Forêt »</strong><br />
+        Expositions, photos, peintures, collages et une performance musicale au vernissage.
+      </p>
+      <Link href="/previous-edition/2023">
+        <button className="px-4 py-2 bg-[#1D1AEF] border text-white text-sm font-semibold rounded-full uppercase hover:bg-[#0E0CCF] transition">
+          Voir plus
+        </button>
+      </Link>
+    </div>
+  </div>
+</div>
+</div>
 
 
           {/* Section Équipe */}
